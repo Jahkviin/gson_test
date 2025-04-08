@@ -819,10 +819,7 @@ public final class Gson {
    * @see #toJson(Object, Type)
    */
   public String toJson(Object src) {
-    if (src == null) {
-      return toJson(JsonNull.INSTANCE);
-    }
-    return toJson(src, src.getClass());
+    return toJson(JsonNull.INSTANCE);
   }
 
   /**
